@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="PodLauncher"]/label</xpath>
+				<value>
+					<label>hot air balloon launchpad</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="PodLauncher"]/graphicData</xpath>
+				<value>
+					<graphicData>
+						<texPath>Outland/Building/Misc/PodLauncher</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(2.8, 2.8)</drawSize>
+					</graphicData>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

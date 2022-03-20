@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="CommsConsole"]/label</xpath>
+				<value>
+					<label>pidgeon post</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="CommsConsole"]/graphicData</xpath>
+				<value>
+					<graphicData>
+						<texPath>Outland/Building/Misc/CommsConsole</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(4.85, 4.85)</drawSize>
+						<damageData>
+						  <rect>(0,0,3,1.8)</rect>
+						  <cornerBL>Damage/Corner</cornerBL>
+						  <cornerBR>Damage/Corner</cornerBR>
+						</damageData>
+						<shadowData>
+						  <volume>(3,0.5,2)</volume>
+						</shadowData>
+					</graphicData>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="CommsConsole"]/comps/li[@Class="CompProperties_Power"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

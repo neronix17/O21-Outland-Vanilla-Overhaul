@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="TransportPod"]/label</xpath>
+				<value>
+					<label>hot air balloon</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="TransportPod"]/graphicData</xpath>
+				<value>
+					<graphicData>
+						<texPath>Outland/Special/DropPod</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<drawSize>(2.5, 2.5)</drawSize>
+					</graphicData>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="DropPodIncoming"]/graphicData</xpath>
+				<value>
+					<graphicData>
+						<texPath>Outland/Special/DropPod</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<shaderType>CutoutFlying</shaderType>
+						<drawSize>2.5</drawSize>
+					</graphicData>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="DropPodLeaving"]/graphicData</xpath>
+				<value>
+					<graphicData>
+						<texPath>Outland/Special/DropPod</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<shaderType>CutoutFlying</shaderType>
+						<drawSize>2.5</drawSize>
+					</graphicData>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="ActiveDropPod"]/label</xpath>
+				<value>
+					<label>hot air balloon</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="ActiveDropPod"]/graphicData</xpath>
+				<value>
+					<graphicData>
+						<texPath>Outland/Special/DropPod</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<drawSize>2.5</drawSize>
+						<shadowData>
+							<volume>(0.8, 0.6, 0.8)</volume>
+						</shadowData>
+					</graphicData>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
